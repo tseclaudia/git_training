@@ -1,4 +1,5 @@
 import numpy as np
+import math
 
 
 def add(a, b):
@@ -21,4 +22,11 @@ def pow(a, b):
     return a*b
 
 def log(a, base=10):
-    return np.log(a)
+	"""
+	Return the log of a, base 10 (by default).
+
+	Parameters:
+	-----------
+	a: int
+	"""
+	return math.log(a, base)
